@@ -18,10 +18,8 @@ import java.time.Duration;
 import java.util.Properties;
 
 public class BasePage {
-
-
     public WebElement waitForElement(By ele){
-        WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(5));
+        WebDriverWait wait = new WebDriverWait(DriverManager.getDriver(), Duration.ofSeconds(FrameworkConstants.getExplicitWaitTime()));
         return wait.until(ExpectedConditions.visibilityOfElementLocated(ele));
     }
     public static String getScreenshotPath() throws IOException {
@@ -31,12 +29,9 @@ public class BasePage {
         return screenshotPath;
     }
     public static String readProperty(String prop) throws IOException {
-
         Properties properties = new Properties();
         FileInputStream fis = new FileInputStream(FrameworkConstants.getPropertiesFilePath());
         properties.load(fis);
-        System.out.println(properties.getProperty("browser"));
        return properties.getProperty(prop);
-
     }
 }

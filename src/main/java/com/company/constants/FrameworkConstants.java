@@ -6,6 +6,7 @@ public final class FrameworkConstants {
     private final static String propertiesFilePath = projectPath+"//globalproperties.properties";
     private final static String errorScreenshotPath = projectPath + "//src//reports//error.png";
 
+    private final static int explicitWaitTime = 10;
     public static String getProjectPath(){
         return projectPath;
     }
@@ -14,5 +15,8 @@ public final class FrameworkConstants {
     }
     public static String getErrorScreenshotPath(){
         return errorScreenshotPath;
+    }
+    public static int getExplicitWaitTime(){
+        return explicitWaitTime;
     }
 }
