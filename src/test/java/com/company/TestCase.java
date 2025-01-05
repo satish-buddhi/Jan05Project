@@ -15,7 +15,7 @@ public final class TestCase extends BaseTest { // does not extend
     @Test
     public void loginWithValidCredentials() throws InterruptedException, IOException {
        String txt =  new OHRMLoginPage().enterUserName("Admin")
-                .enterpassword("admin123")
+                .enterpassword("admin1234")
                 .clickLogin().getDashboardTxt();
         Assertions.assertThat(txt).hasSize(txt.length())
                 .isEqualTo("Dashboard");
