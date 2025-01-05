@@ -1,0 +1,14 @@
+
+w
+java:S1488"aImmediately return this expression instead of assigning it to the temporary variable "dashboard".(¨ùÎ‘
+m	java:S116"XRename this field "txt_Dashboard" to match the regular expression '^[a-z][a-zA-Z0-9]*$'.(Îˆ‰ï
+X
+java:S1128"=Remove this unused import 'com.company.driver.DriverManager'.(”Ù¨–şÿÿÿÿ
+V
+java:S1128";Remove this unused import 'org.openqa.selenium.WebElement'.(‰ïµ”şÿÿÿÿ
+i
+java:S1128"NRemove this unused import 'org.openqa.selenium.support.ui.ExpectedConditions'.(û€Èéúÿÿÿÿ
+_
+java:S1128"IRemove this unused import 'org.openqa.selenium.support.ui.WebDriverWait'.(¥÷ó
+J
+java:S1128	"/Remove this unused import 'java.time.Duration'.(ëá¯‰üÿÿÿÿ
